@@ -2,3 +2,4 @@
 docker run elasticsearch
 # This instance is closed to the outside world, let's open it up
 docker run -p 9200:9200 elasticsearch
+# Now, creating a dockerfile
