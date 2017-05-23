@@ -1,5 +1,8 @@
 # A nice, clean, elasticsearch instance is starting up.
 docker run elasticsearch
 # This instance is closed to the outside world, let's open it up
-docker run -p 9200:9200 elasticsearch
+docker run -p 9200:9200 --name elastic-docker elasticsearch
+# Peak into elasticsearch dockerfiole
 # Now, creating a dockerfile
+<Use dockerfile in repo as template>
+# Launch a container based on 
