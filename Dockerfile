@@ -1,3 +1,4 @@
 FROM node
-COPY app.js package.json
+COPY ./src /src
+WORKDIR /src
 RUN npm install
