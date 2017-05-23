@@ -2,4 +2,4 @@ FROM node
 COPY ./src /src
 WORKDIR /src
 RUN npm install
-CMD app.js
+CMD node app.js
