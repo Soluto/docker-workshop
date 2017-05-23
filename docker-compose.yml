@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  elastic-docker:
+    image: elasticsearch
+    ports:
+      - "9200"
+    networks:
+      - workshopapp
+
+  node-es-client:
+    build: .
+    networks:
+      - workshopapp
+    depends_on:
+      - elastic-docker
+    command: ["/src/wait-for-it.sh", "-t", "0", "elastic-docker:9200", "--", "node", "app.js"]
+
+networks:
+  workshopapp:
