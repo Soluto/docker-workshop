@@ -6,6 +6,7 @@
 
 #### Peak into elasticsearch dockerfile
 [It's in ./Advanced/Dockerfile-elasticsearch] (https://github.com/docker-library/elasticsearch/blob/f9b79ebc2e8fd42372b8f302321585c4d09f9ccc/5/Dockerfile)
+[I'm an inline-style link](https://www.google.com)
 
 #### Let's see if there are any indexes inside our elasticsearch cluster
 `curl localhost:9200/_cat/indices`
