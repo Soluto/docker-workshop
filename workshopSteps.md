@@ -20,7 +20,7 @@
 `docker run --name node-docker --rm=true node-es-client`
 
 #### It fails, so let's add a link
-`docker run --name node-docker --link elastic-docker:elastic-docker --rm=true node-es-client`
+`docker run -p 5858:5858 --name node-docker --link elastic-docker:elastic-docker --rm=true node-es-client node --debug-brk app.js`
 
 #### Let's check again for indexes
 `curl localhost:9200/_cat/indices`
