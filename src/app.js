@@ -1,7 +1,7 @@
 var elasticsearch = require('elasticsearch');
 var client = new elasticsearch.Client({
   host: 'elastic-docker:9200',
-  log: 'trace'
+  log: 'info'
 });
 
 client.ping({
