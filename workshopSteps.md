@@ -24,3 +24,7 @@
 
 #### Let's check again for indexes
 `curl localhost:9200/_cat/indices`
+
+#### Debug application
+`cd debug-example && docker-compose up`
+https://blog.docker.com/2016/07/live-debugging-docker/
