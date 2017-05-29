@@ -20,14 +20,14 @@
 `docker build -t node-es-client .`
 
 #### STEP 8. Launch a container based on the image built
-`docker run -it --name node-docker --rm=true node-es-client`
-
-#### STEP 9. It fails, so let's add a link
 `docker run --it --name node-docker --link elastic-docker:elastic-docker --rm=true node-es-client`
 
-#### STEP 10.  Let's check again for indexes
+#### STEP 9.  Let's check again for indexes
 `curl localhost:9200/_cat/indices`
 
-#### STEP 11. Debug application
+#### STEP 10. Check out Docker-compose.yml
+<It's in the repo root dir>
+
+#### STEP 11. Watch as I Debug an application
 `cd debug-example && docker-compose up`
 https://blog.docker.com/2016/07/live-debugging-docker/
