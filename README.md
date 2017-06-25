@@ -14,7 +14,7 @@
 `curl localhost:9200/_cat/indices`
 
 #### STEP 6. Now, creating a dockerfile
-<Use dockerfile in repo as template>
+##### Use dockerfile in repo as template
 
 #### STEP 7. And building the image from the dockerfile
 `docker build -t node-es-client .`
