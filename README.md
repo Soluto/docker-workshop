@@ -28,5 +28,4 @@
 <It's in the repo root dir>
 
 #### STEP 11. Watch as I Debug an application
-`cd debug-example && docker-compose up`
-https://blog.docker.com/2016/07/live-debugging-docker/
+https://github.com/creynders/docker-example-backend
