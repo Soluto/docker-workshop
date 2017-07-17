@@ -5,8 +5,7 @@
 `docker run -p 9200:9200 --name elastic-docker --rm=true elasticsearch`
 
 #### STEP 3. Check connectivity to elasticsearch
-`curl localhost:9200
-`
+`curl localhost:9200`
 #### STEP 4. Let's Peak into elasticsearch dockerfile
 [It's in ./Advanced/Dockerfile-elasticsearch](https://github.com/docker-library/elasticsearch/blob/f9b79ebc2e8fd42372b8f302321585c4d09f9ccc/5/Dockerfile)
 
@@ -20,7 +19,7 @@
 `docker build -t node-es-client .`
 
 #### STEP 8. Launch a container based on the image built
-`docker run --it --name node-docker --link elastic-docker:elastic-docker --rm=true node-es-client`
+`docker run -it --name node-docker --link elastic-docker:elastic-docker --rm=true node-es-client`
 
 #### STEP 9.  Let's check again for indexes
 `curl localhost:9200/_cat/indices`
